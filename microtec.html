@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام الهوتسبوت الذكي | الإصدار المتقدم</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style-mic.css">
+
+</head>
+<body>
+    <!-- شريط التنقل الذكي -->
+    <nav class="smart-nav" id="smartNav">
+        <div class="logo-container">
+            <i class="fas fa-wifi logo-icon"></i>
+            <span class="logo-text">هوتسبوت برو</span>
+        </div>
+        <div class="nav-actions">
+            <a href="#services" class="nav-button secondary-btn">
+                <i class="fas fa-th-large"></i> الخدمات
+            </a>
+            <button class="nav-button primary-btn" id="openChatBtn">
+                <i class="fas fa-headset"></i> الدعم المباشر
+            </button>
+        </div>
+    </nav>
+
+    <!-- القسم البطولي التفاعلي -->
+    <section class="hero-section">
+        <div class="hero-content animate__animated animate__fadeInLeft">
+            <h1 class="hero-title">نظام <span>إدارة الهوتسبوت</span> المتكامل</h1>
+            <p class="hero-description">
+                حلول متقدمة لإدارة شبكات الواي فاي العامة مع واجهات مستخدم ذكية، تحكم كامل، وتقارير مفصلة لتحسين تجربة عملائك.
+            </p>
+            <div class="hero-actions">
+                <a href="#services" class="nav-button primary-btn">
+                    <i class="fas fa-laptop-code"></i> استكشف الخدمات
+                </a>
+                <button class="nav-button secondary-btn" id="demoBtn">
+                    <i class="fas fa-play-circle"></i> شاهد العرض
+                </button>
+            </div>
+        </div>
+        <div class="hero-image-container animate__animated animate__fadeInRight">
+            <img src="imags/hots.jpg" alt="نظام الهوتسبوت" class="main-hero-image">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+    </section>
+
+    <!-- نظام البطاقات المتطور -->
+    <section class="services-section" id="services">
+        <div class="section-header">
+            <h2 class="section-title animate__animated animate__fadeInUp">واجهات النظام الرئيسية</h2>
+            <p class="section-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+                صممنا واجهات مستخدم ذكية وسهلة الاستخدام لتقديم أفضل تجربة لعملائك
+            </p>
+        </div>
+        <div class="services-grid">
+            <!-- بطاقة واجهة الدخول -->
+            <div class="service-card animate__animated animate__fadeInUp animate__delay-1s">
+                <div class="card-media">
+                    <div class="card-slider">
+                        <img src="imags/01.png" class="slide active" alt="واجهة الدخول">
+                        <img src="imags/02.jpg" class="slide" alt="شاشة تسجيل الدخول">
+                        <img src="imags/03.jpg" class="slide" alt="نموذج الدخول">
+                    </div>
+                    <div class="slider-controls">
+                        <div class="slider-dot active" data-slide="0"></div>
+                        <div class="slider-dot" data-slide="1"></div>
+                        <div class="slider-dot" data-slide="2"></div>
+                    </div>
+                    <div class="card-badge">واجهة الدخول</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <div class="card-icon">
+                                <i class="fas fa-sign-in-alt"></i>
+                            </div>
+                            تسجيل الدخول
+                        </h3>
+                        <span class="card-time">
+                            <i class="far fa-clock"></i> 2 دقيقة
+                        </span>
+                    </div>
+                    <p class="card-description">
+                        واجهة دخول آمنة وسهلة الاستخدام تتيح للعملاء الوصول إلى الشبكة بعدة طرق مختلفة مع تأمين متقدم وحماية ضد الاختراقات.
+                    </p>
+                    <div class="card-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <span>خيارات متعددة لتسجيل الدخول</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <span>نظام تحقق من البيانات</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <span>تصميم متجاوب لجميع الأجهزة</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-price">
+                            <span>بدءاً من</span> 50 ر.س
+                        </div>
+                        <a href="#" class="card-button" onclick="showDetails('login')">
+                            <i class="fas fa-eye"></i> معاينة
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- بطاقة واجهة الحالة -->
+            <div class="service-card animate__animated animate__fadeInUp animate__delay-2s">
+                <div class="card-media">
+                    <div class="card-slider">
+                        <img src="imags/05.png" class="slide active" alt="واجهة الحالة">
+                        <img src="imags/02.png" class="slide" alt="معلومات الجلسة">
+                        <img src="imags/03.png" class="slide" alt="إحصائيات الاستخدام">
+                    </div>
+                    <div class="slider-controls">
+                        <div class="slider-dot active" data-slide="0"></div>
+                        <div class="slider-dot" data-slide="1"></div>
+                        <div class="slider-dot" data-slide="2"></div>
+                    </div>
+                    <div class="card-badge">لوحة التحكم</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <div class="card-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            حالة الاتصال
+                        </h3>
+                        <span class="card-time">
+                            <i class="far fa-clock"></i> 3 دقائق
+                        </span>
+                    </div>
+                    <p class="card-description">
+                        لوحة تحكم تفاعلية تعرض تفاصيل الجلسة الحية للمستخدم مع إحصائيات الاستهلاك والوقت المتبقي والسرعة بشكل مرئي وسهل الفهم.
+                    </p>
+                    <div class="card-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <span>عرض الوقت المتبقي</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <span>مراقبة استهلاك البيانات</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <span>تحديث تلقائي للإحصائيات</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-price">
+                            <span>بدءاً من</span> 50 ر.س
+                        </div>
+                        <a href="#" class="card-button" onclick="showDetails('status')">
+                            <i class="fas fa-eye"></i> معاينة
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- بطاقة واجهة تسجيل الخروج -->
+            <div class="service-card animate__animated animate__fadeInUp animate__delay-3s">
+                <div class="card-media">
+                    <div class="card-slider">
+                        <img src="imags/03.png" class="slide active" alt="واجهة الخروج">
+                        <img src="imags/logout1.jpg" class="slide" alt="تأكيد الخروج">
+                        <img src="imags/logout2.jpg" class="slide" alt="رسالة الوداع">
+                    </div>
+                    <div class="slider-controls">
+                        <div class="slider-dot active" data-slide="0"></div>
+                        <div class="slider-dot" data-slide="1"></div>
+                        <div class="slider-dot" data-slide="2"></div>
+                    </div>
+                    <div class="card-badge">نهاية الجلسة</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <div class="card-icon">
+                                <i class="fas fa-sign-out-alt"></i>
+                            </div>
+                            تسجيل الخروج
+                        </h3>
+                        <span class="card-time">
+                            <i class="far fa-clock"></i> 1 دقيقة
+                        </span>
+                    </div>
+                    <p class="card-description">
+                        واجهة وداع ذكية تمكن المستخدم من إنهاء جلسة الاتصال بشكل آمن مع عرض ملخص للجلسة ورسائل تذكيرية لإعادة الاتصال.
+                    </p>
+                    <div class="card-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <span>تأكيد عملية الخروج</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <span>ملخص كامل للجلسة</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <span>إمكانية إعادة الاتصال</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-price">
+                            <span>بدءاً من</span> 399 ر.س
+                        </div>
+                        <a href="#" class="card-button" onclick="showDetails('logout')">
+                            <i class="fas fa-eye"></i> معاينة
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الإحصائيات -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-card">
+                <i class="fas fa-users stat-icon"></i>
+                <div class="stat-number">5,0+</div>
+                <div class="stat-title">مستخدم نشط</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-wifi stat-icon"></i>
+                <div class="stat-number">120+</div>
+                <div class="stat-title">نقطة اتصال</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-clock stat-icon"></i>
+                <div class="stat-number">99.9%</div>
+                <div class="stat-title">وقت تشغيل</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-smile stat-icon"></i>
+                <div class="stat-number">98%</div>
+                <div class="stat-title">رضا العملاء</div>
+            </div>
+        </div>
+        <div class="stats-pattern"></div>
+    </section>
+
+    <!-- نافذة الدردشة الذكية -->
+    <div class="chat-modal" id="chatModal">
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="chat-title">
+                    <i class="fas fa-headset"></i>
+                    <span>الدعم الفوري</span>
+                </div>
+                <div class="chat-close" id="closeChatBtn">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="message bot-message">
+                    مرحباً بك في خدمة الدعم الفوري لنظام هوتسبوت برو. كيف يمكنني مساعدتك اليوم؟
+                    <span class="message-time">الآن</span>
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <input type="text" class="chat-input" id="chatInput" placeholder="اكتب رسالتك هنا...">
+                <button class="send-button" id="sendMessageBtn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // تأثير التمرير لشريط التنقل
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('smartNav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // التحكم في سلايدر الصور
+        document.querySelectorAll('.card-slider').forEach(slider => {
+            const slides = slider.querySelectorAll('.slide');
+            const dots = slider.parentElement.querySelectorAll('.slider-dot');
+            let currentIndex = 0;
+            let interval;
+            
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.toggle('active', i === index);
+                });
+                
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('active', i === index);
+                });
+                
+                currentIndex = index;
+            }
+            
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    showSlide(index);
+                    resetInterval();
+                });
+            });
+            
+            function nextSlide() {
+                const nextIndex = (currentIndex + 1) % slides.length;
+                showSlide(nextIndex);
+            }
+            
+            function startInterval() {
+                interval = setInterval(nextSlide, 3000);
+            }
+            
+            function resetInterval() {
+                clearInterval(interval);
+                startInterval();
+            }
+            
+            startInterval();
+            
+            // إيقاف التبديل التلقائي عند التمرير
+            slider.addEventListener('mouseenter', () => {
+                clearInterval(interval);
+            });
+            
+            slider.addEventListener('mouseleave', () => {
+                startInterval();
+            });
+        });
+
+        // التحكم في نافذة الدردشة
+        const chatModal = document.getElementById('chatModal');
+        const openChatBtn = document.getElementById('openChatBtn');
+        const closeChatBtn = document.getElementById('closeChatBtn');
+        const chatInput = document.getElementById('chatInput');
+        const sendMessageBtn = document.getElementById('sendMessageBtn');
+        const chatBody = document.getElementById('chatBody');
+
+        openChatBtn.addEventListener('click', () => {
+            chatModal.classList.add('active');
+        });
+
+        closeChatBtn.addEventListener('click', () => {
+            chatModal.classList.remove('active');
+        });
+
+        function sendMessage() {
+            const message = chatInput.value.trim();
+            if (message) {
+                // عرض رسالة المستخدم
+                const userMsg = document.createElement('div');
+                userMsg.className = 'message user-message';
+                userMsg.innerHTML = `${message} <span class="message-time">الآن</span>`;
+                chatBody.appendChild(userMsg);
+                
+                chatInput.value = '';
+                chatBody.scrollTop = chatBody.scrollHeight;
+                
+                // إجابة افتراضية بعد تأخير
+                setTimeout(() => {
+                    const botMsg = document.createElement('div');
+                    botMsg.className = 'message bot-message';
+                    
+                    if (message.includes('مرحبا') || message.includes('اهلا') || message.includes('السلام')) {
+                        botMsg.innerHTML = `مرحباً بك! كيف يمكنني مساعدتك اليوم؟ <span class="message-time">الآن</span>`;
+                    } 
+                    else if (message.includes('شكرا') || message.includes('متشكر') || message.includes('ممتاز')) {
+                        botMsg.innerHTML = `العفو! نحن هنا لمساعدتك في أي وقت. هل لديك أي استفسارات أخرى؟ <span class="message-time">الآن</span>`;
+                    }
+                    else if (message.includes('مشكلة') || message.includes('خطأ') || message.includes('عطل')) {
+                        botMsg.innerHTML = `نعتذر للإزعاج. يرجى وصف المشكلة التي تواجهها بالتفصيل وسنساعدك في حلها. <span class="message-time">الآن</span>`;
+                    }
+                    else if (message.includes('سعر') || message.includes('تكلفة') || message.includes('ثمن')) {
+                        botMsg.innerHTML = `أسعار خدماتنا تبدأ من 499 ريال سعودي حسب الميزات المطلوبة. هل تود معرفة التفاصيل؟ <span class="message-time">الآن</span>`;
+                    }
+                    else {
+                        botMsg.innerHTML = `شكراً لرسالتك. تم إرسال استفسارك إلى فريق الدعم وسيتم الرد عليك قريباً. <span class="message-time">الآن</span>`;
+                    }
+                    
+                    chatBody.appendChild(botMsg);
+                    chatBody.scrollTop = chatBody.scrollHeight;
+                }, 1000);
+            }
+        }
+
+        sendMessageBtn.addEventListener('click', sendMessage);
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendMessage();
+        });
+
+        // عرض تفاصيل البطاقة
+        function showDetails(type) {
+            let title, description;
+            
+            switch(type) {
+                case 'login':
+                    title = "واجهة تسجيل الدخول";
+                    description = "هذه الواجهة تمكن المستخدمين من الدخول إلى شبكة الواي فاي بعدة طرق مختلفة. تدعم الواجهة:<br><br>" +
+                                 "- تسجيل الدخول بكلمة مرور<br>" +
+                                 "- الدخول برمز QR<br>" +
+                                 "- المصادقة عبر وسائل التواصل الاجتماعي<br>" +
+                                 "- نظام الفواتير المدفوعة مقدماً<br><br>" +
+                                 "الواجهة مصممة لتكون سهلة الاستخدام وآمنة مع نظام تحقق من البيانات المدمج.";
+                    break;
+                case 'status':
+                    title = "واجهة حالة الاتصال";
+                    description = "لوحة التحكم التفاعلية هذه تعرض للمستخدم جميع تفاصيل جلسة الاتصال الحالية:<br><br>" +
+                                 "- الوقت المتبقي للجلسة<br>" +
+                                 "- كمية البيانات المستهلكة<br>" +
+                                 "- سرعة التحميل والرفع<br>" +
+                                 "- عنوان IP المخصص<br><br>" +
+                                 "تتميز الواجهة بتحديث البيانات تلقائياً كل 30 ثانية دون الحاجة لإعادة تحميل الصفحة.";
+                    break;
+                case 'logout':
+                    title = "واجهة تسجيل الخروج";
+                    description = "واجهة الوداع الذكية تتيح للمستخدم إنهاء جلسة الاتصال بشكل آمن مع عرض:<br><br>" +
+                                 "- ملخص كامل للجلسة (المدة، الاستهلاك)<br>" +
+                                 "- رسائل تذكيرية لإعادة الاتصال<br>" +
+                                 "- خيارات التقييم للخدمة<br>" +
+                                 "- روابط سريعة للدعم الفني<br><br>" +
+                                 "يمكن تخصيص رسائل الوداع حسب نوع العميل أو الموقع.";
+                    break;
+            }
+            
+            Swal.fire({
+                title: title,
+                html: description,
+                imageUrl: `imags/${type}1.jpg`,
+                imageWidth: 400,
+                imageHeight: 250,
+                imageAlt: title,
+                confirmButtonText: 'حسناً',
+                confirmButtonColor: '#4361ee',
+            });
+        }
+
+        // زر العرض التوضيحي
+        document.getElementById('demoBtn').addEventListener('click', function() {
+            Swal.fire({
+                title: 'عرض توضيحي للنظام',
+                html: 'سيتم تحويلك إلى صفحة العرض التوضيحي حيث يمكنك تجربة واجهات النظام بشكل مباشر.',
+                icon: 'info',
+                showCancelButton: true,
+                confirmButtonText: 'انتقل الآن',
+                cancelButtonText: 'لاحقاً',
+                confirmButtonColor: '#4361ee',
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.open('demo.html', '_blank');
+                }
+            });
+        });
+
+        // إضافة تأثيرات للعناصر عند التمرير
+        const animateElements = document.querySelectorAll('.animate__animated');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add(entry.target.dataset.animation);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        animateElements.forEach(el => {
+            el.dataset.animation = el.classList[1];
+            el.classList.remove(el.classList[1]);
+            observer.observe(el);
+        });
+
+        // مكتبة SweetAlert2 للتنبيهات الجميلة
+        const Swal = {
+            fire: function(options) {
+                alert(options.title + "\n\n" + options.html.replace(/<br>/g, "\n"));
+            }
+        };
+    </script>
+</body>
+</html>
